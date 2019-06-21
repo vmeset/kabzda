@@ -1,12 +1,11 @@
 import React from 'react';
 import './App.css';
+import Head from "./components/header.js";
 
 function App() {
   return (
     <div className="wrapper">
-      <header className="head">
-       <img src="https://st3.depositphotos.com/6203808/16510/v/1600/depositphotos_165103386-stock-illustration-vintage-typography-design-with-ice.jpg" />
-      </header>
+      <Head />
       <nav className="navigator">
        <div>
         Profile
