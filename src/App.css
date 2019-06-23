@@ -22,9 +22,9 @@
   grid-area: n;
 }
 
-.content {
+.profile {
   grid-area: c;
 }
-.content img {
+.profile img {
   width: 120px;
 }
