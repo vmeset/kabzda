@@ -1,0 +1,6 @@
+.head {
+  grid-area: h;
+}
+.head img {
+  width: 100px;
+}
