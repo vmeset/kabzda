@@ -1,8 +1,9 @@
-import React from 'react';
+import React from 'react'
+import styles from './navigator.module.css'
 
 const Navigator = () => {
 	return (
-		<nav className="navigator">
+		<nav className={styles.navigator}>
 			<div>
 				Profile
 			</div>

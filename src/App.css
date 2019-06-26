@@ -10,21 +10,3 @@
   grid-template-rows: 150px 1fr;
   grid-template-columns: 2fr 10fr;
 }
-
-.head {
-  grid-area: h;
-}
-.head img {
-  width: 100px;
-}
-
-.navigator {
-  grid-area: n;
-}
-
-.profile {
-  grid-area: c;
-}
-.profile img {
-  width: 120px;
-}
