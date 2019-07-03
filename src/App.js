@@ -1,17 +1,21 @@
-import React from 'react';
-import './App.css';
-import Head from "./components/header.js";
-import Navigator from "./components/navigator.js";
+import React from 'react'
+import styles from './App.module.css'
+import Head from "./components/header/header.js"
+import Navigator from "./components/navigator/navigator.js"
 import Profile from "./components/profile/profile.js"
+import Messages from "./components/messages/messages.js"
 
 function App() {
   return (
-    <div className="wrapper">
+    <div className={styles.wrapper}>
       <Head />
       <Navigator />
-      <Profile />
+      <div className={styles.content}>
+
+		<Messages />
+      </div>
     </div>
   );
 }
 
-export default App;
+export default App

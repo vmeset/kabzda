@@ -10,3 +10,7 @@
   grid-template-rows: 150px 1fr;
   grid-template-columns: 2fr 10fr;
 }
+.content {
+	width: 500px;
+	background-color: green;
+}
