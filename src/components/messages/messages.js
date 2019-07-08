@@ -30,18 +30,18 @@ let messagesData = [
 	{id: 3, message: 'Hola'},
 ]
 
+let DialogElements = dialogsData.map ( d => ( <Dialog name={d.name} id={d.id} /> ))
+
+let MessageElements = messagesData.map( m => ( <Message message = {m.message} /> ))
+
 const Messages = () => {
 	return (
 		<div className={styles.dialogs}>
 			<div className={styles.dialogItems}>
-				<Dialog name={dialogsData[0].name} id={dialogsData[0].id} />
-				<Dialog name={dialogsData[1].name} id={dialogsData[1].id} />
-				<Dialog name={dialogsData[2].name} id={dialogsData[2].id} />
+				{DialogElements}
 			</div>
 			<div className={styles.messages}>
-				<Message message={messagesData[0].message} />
-				<Message message={messagesData[1].message} />
-				<Message message={messagesData[2].message} />
+				{MessageElements}
 			</div>
 
 		</div>
