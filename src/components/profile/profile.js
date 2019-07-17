@@ -4,11 +4,10 @@ import MyPosts from './myPosts/myPosts.js'
 import ProfileInfo from './profileInfo.js'
 
 const Profile = (props) => {
-
 	return (
 			<div className={styles.profile}>
 				<ProfileInfo />
-				<MyPosts allPosts={props.allPosts} />
+				<MyPosts posts={props.profileState.allPosts} />
 			</div>
 		)
 }

@@ -15,8 +15,8 @@ function App(props) {
 	      <Head />
 	      <Navigator />
 	      <div className={styles.content}>
-			<Route path='/profile' render = { () => <Profile allPosts={props.allPosts}/> } />
-			<Route path='/messages' render = { () => <Messages dialogz={props.dialogz} messagez={props.messagez} />} />
+			<Route path='/profile' render = { () => <Profile profileState={props.appState.profilePage}/> } />
+			<Route path='/messages' render = { () => <Messages dialogState={props.appState.dialogPage} />} />
 	      </div>
 	    </div>
 	</BrowserRouter>
