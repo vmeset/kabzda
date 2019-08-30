@@ -4,21 +4,19 @@ import Head from "./components/header/header.js"
 import Navigator from "./components/navigator/navigator.js"
 import Profile from "./components/profile/profile.js"
 import Messages from "./components/messages/messages.js"
-import {BrowserRouter, Route} from 'react-router-dom'
+import {Route} from 'react-router-dom'
 
 function App(props) {
 
 	return (
-  	<BrowserRouter>
 	    <div className={styles.wrapper}>
 	      <Head />
 	      <Navigator />
 	      <div className={styles.content}>
-			<Route path='/profile' render = { () => <Profile profileState={props.appState.profilePage} addPost={props.addPost}/> } />
-			<Route path='/messages' render = { () => <Messages dialogState={props.appState.dialogPage} />} />
+			<Route path='/profile' render = { () => <Profile profilePage={props.state.profilePage} addPost={props.addPost} updatePost={props.updatePost}/> } />
+			<Route path='/messages' render = { () => <Messages dialogState={props.state.dialogPage} />} />
 	      </div>
 	    </div>
-	</BrowserRouter>
   );
 }
 

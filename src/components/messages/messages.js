@@ -17,7 +17,6 @@ const Messages = (props) => {
 			<div className={styles.messages}>
 				{MessageElements}
 			</div>
-
 		</div>
 	)
 }
