@@ -1,3 +1,6 @@
+const ADD_POST = 'ADD-POST'
+const UPDATE_NEW_POST = 'UPDATE-NEW-POST'
+
 let store = {
     _state: {
 
@@ -50,4 +53,6 @@ let store = {
     }
 }
 
+export const addPostActionCreator = () => ({type: ADD_POST})
+export const updateNewPostActionCreator = (text) => ({type: UPDATE_NEW_POST})
 export default store

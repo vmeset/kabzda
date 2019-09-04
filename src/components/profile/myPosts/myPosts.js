@@ -1,20 +1,20 @@
 import React from 'react'
 import Post from './post/post.js'
-
+import {addPostActionCreator, updateNewPostActionCreator} from "../../../state";
 
 const MyPosts = (props) => {
 
 	let postsElements = props.posts.map((element) => <Post message={element.message} likes={element.likes} />)
 
 	let addPost = () => {
-		props.dispatch({type: 'ADD-POST'})
+		props.dispatch(addPostActionCreator())
 	}
 
 	let inputText = React.createRef()
 
 	let onChangePost = () => {
 		let text = inputText.current.value
-		props.dispatch({type: 'UPDATE-NEW-POST', newText: text})
+		props.dispatch(updateNewPostActionCreator(text))
 	}
 
 	return (
