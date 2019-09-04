@@ -13,7 +13,7 @@ function App(props) {
 	      <Head />
 	      <Navigator />
 	      <div className={styles.content}>
-			<Route path='/profile' render = { () => <Profile profilePage={props.state.profilePage} addPost={props.addPost} updatePost={props.updatePost}/> } />
+			<Route path='/profile' render = { () => <Profile profilePage={props.state.profilePage} dispatch={props.dispatch} /> } />
 			<Route path='/messages' render = { () => <Messages dialogState={props.state.dialogPage} />} />
 	      </div>
 	    </div>

@@ -7,14 +7,14 @@ const MyPosts = (props) => {
 	let postsElements = props.posts.map((element) => <Post message={element.message} likes={element.likes} />)
 
 	let addPost = () => {
-		props.addPost()
+		props.dispatch({type: 'ADD-POST'})
 	}
 
 	let inputText = React.createRef()
 
 	let onChangePost = () => {
 		let text = inputText.current.value
-		props.updatePost(text)
+		props.dispatch({type: 'UPDATE-NEW-POST', newText: text})
 	}
 
 	return (
