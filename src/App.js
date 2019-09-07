@@ -14,7 +14,7 @@ function App(props) {
 	      <Navigator />
 	      <div className={styles.content}>
 			<Route path='/profile' render = { () => <Profile profilePage={props.state.profilePage} dispatch={props.dispatch} /> } />
-			<Route path='/messages' render = { () => <Messages dialogState={props.state.dialogPage} />} />
+			<Route path='/messages' render = { () => <Messages store={props.store} />} />
 	      </div>
 	    </div>
   );

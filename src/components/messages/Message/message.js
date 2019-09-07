@@ -15,8 +15,8 @@ const Message = (props) => {
 		<div className={styles.message}>
 			<div>
 				{props.message}
-				<textarea ref={textareaRef}></textarea>
-				<button onClick={newMessage}>Send</button>
+				{/*<textarea ref={textareaRef}></textarea>*/}
+				{/*<button onClick={newMessage}>Send</button>*/}
 			</div>
 		</div>
 	)
